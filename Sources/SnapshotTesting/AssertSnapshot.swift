@@ -280,7 +280,7 @@ public func verifySnapshot<Value, Format>(
           XCTContext.runActivity(named: "Attached Failure Diff") { activity in
             attachments.forEach { attachment in
               if let attachmentName = attachment.name {
-                attachment.name = "\(testName)-\(identifier)-\(attachmentName)"
+                attachment.name = "\(testName)-\(attachmentName)"
               }
               activity.add(attachment)
             }
